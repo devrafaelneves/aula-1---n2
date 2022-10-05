@@ -1,0 +1,43 @@
+/*Quarto*/
+SELECT 
+alunos.nome, 
+alunos.cpf,
+turma.descricao
+FROM alunos 
+LEFT JOIN turma 
+ON (turma.id = alunos.id_turma)
+
+/*Terceiro*/
+/*
+SELECT 
+alunos.nome, 
+alunos.cpf,
+turma.descricao
+FROM alunos 
+JOIN turma 
+ON (turma.id = alunos.id_turma)*/
+
+/*
+INSERT INTO alunos 
+(nome, cpf)
+VALUES
+("jose", 66666666666)*/
+
+
+/*Segundo*/
+
+/*SELECT * FROM alunos WHERE id_turma = 1*/
+
+
+
+/*Primeiro CRUD
+SELECT * FROM alunos 
+
+INSERT INTO alunos (nome, semestre) VALUES ('Jason', 6)
+
+UPDATE alunos SET
+nome = "Gold"
+WHERE id = 2
+
+DELETE FROM alunos WHERE id = 4
+*/
